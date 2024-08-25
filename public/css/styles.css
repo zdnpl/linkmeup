@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  background-color: #f3f3f1;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/* Styling untuk Floating Navbar */
+.floating-navbar {
+  position: fixed;
+  top: 30px; /* Jarak dari atas */
+  left: 50%; /* Pindah ke tengah horizontal */
+  transform: translateX(-50%); /* Mengatur posisi horizontal ke tengah */
+  background-color: #ffffff; /* Warna latar belakang */
+  border-radius: 50px; /* Ujung tumpul nyaris bulat */
+  padding: 10px 20px; /* Padding */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow lebih besar */
+  display: flex;
+  justify-content: space-between; /* Pusatkan konten dengan ruang di antara item */
+  align-items: center;
+  z-index: 1000; /* Pastikan navbar berada di atas konten lainnya */
+  width: 70%; /* Lebar navbar pada tampilan desktop */
+}
+
+/* Styling untuk logo */
+.logo {
+  width: 50px; /* Atur ukuran logo */
+  height: auto;
+  margin-right: 15px; /* Jarak antara logo dan tombol */
+}
+
+/* Styling untuk tombol Get Started */
+.started-btn {
+  border-radius: 50px; /* Ujung tombol tumpul */
+  background-color: #1e2330;
+  color: white;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.header {
+  min-height: 100vh;
+  background-color: #57886c;
+}
+
+.title {
+  margin-top: 20%;
+  text-align: left;
+  font-size: 50px;
+  color: #f8c7cc;
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e9c0e9; /* Warna latar belakang tombol */
+  color: #000000; /* Warna teks tombol */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px; /* Border-radius seperti bulan */
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow tombol */
+}
+
+.create-form-container {
+  max-width: 650px;
+}
+
+.input-step-label {
+  font-size: 30px;
+}
+
+.sub-label {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.input-form {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  border: 2px solid transparent;
+}
+
+.input-container {
+  position: relative;
+  margin-top: 25%;
+}
+.input-container input {
+  background-color: white;
+}
+
+.input-username {
+  padding-left: 190px;
+}
+
+.input-container .placeholder-text {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d; /* Placeholder color */
+  pointer-events: none;
+}
+
+.bio-input {
+  padding-bottom: 60px;
+}
+
+.next-btn,
+.back-btn {
+  width: 120px;
+  background-color: #57886c;
+  font-weight: bold;
+  color: white;
+  border-radius: 50px;
+}
+
+.back-btn {
+  background-color: #e9c0e9;
+  color: black;
+}
+
+.info-text {
+  font-size: 12px;
+}
+
+.bintang {
+  color: red;
+}
+
+.img-thumbnail {
+  border-radius: 50%;
+}
+
+.profile-pic {
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.form-check-input:checked + .profile-pic {
+  border: 2px solid black;
+}
+
+.pilihan-foto input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+/* styles.css */
+.is-invalid {
+  border: 2px solid #dc3545;
+}
+
+.is-invalid::placeholder {
+  color: #dc3545;
+}
+
+.input-link {
+  width: 55%;
+  margin-left: 10px;
+}
+
+.input-title {
+  width: 35%;
+}
+
+.username {
+  font-size: 20px;
+}
+
+.link-btn {
+  width: 90%;
+  background-color: #57886c;
+  font-weight: bold;
+  color: white;
+  border-radius: 50px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 20px 0px;
+  text-decoration: none;
+  max-width: 700px;
+}
+
+.floating-link {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff; /* Warna latar belakang */
+  border-radius: 20px; /* Sudut melengkung */
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+  z-index: 1000;
+  text-decoration: none;
+  color: #000; /* Warna teks */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Responsivitas untuk tampilan mobile */
+@media (max-width: 768px) {
+  .floating-navbar {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+
+  .floating-navbar .logo {
+    left: 10px; /* Jarak dari kiri */
+  }
+  .started-btn {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .title {
+    margin-top: 30%;
+    font-size: 40px;
+  }
+  .input-username {
+    padding-left: 190px;
+  }
+  .input-container .placeholder-text {
+    left: 5px;
+    margin-top: 22px;
+  }
+  .floating-link {
+    width: 270px;
+    font-size: 12px;
+  }
+}
